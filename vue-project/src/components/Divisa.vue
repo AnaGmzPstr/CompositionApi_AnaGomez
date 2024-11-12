@@ -1,5 +1,21 @@
 <template>
-    
+    <div>
+        <select name="divisa" id="divisa" @change="selectDivisa($event)">
+            <option value=""></option>
+            <option value="€">€</option>
+            <option value="$">$</option>
+        </select>
+    </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { inject } from 'vue';
+
+const actualitzarDivisa = inject('actualitzarDivisa');
+
+const selectDivisa = (event) =>{
+    const selected = event.target.value;
+    actualitzarDivisa(selected);
+}
+
+</script>
