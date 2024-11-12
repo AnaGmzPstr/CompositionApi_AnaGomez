@@ -35,5 +35,7 @@ provide('actualitzarDivisa', actualitzarDivisa);
   display: grid;
   justify-content: center;
   align-items: center;
+  border: solid 1px;
+  margin: 20px;
 }
 </style>

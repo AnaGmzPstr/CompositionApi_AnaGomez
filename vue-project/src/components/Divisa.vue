@@ -1,9 +1,8 @@
 <template>
     <div>
         <select name="divisa" id="divisa" @change="selectDivisa($event)">
-            <option value=""></option>
-            <option value="€">€</option>
-            <option value="$">$</option>
+            <option value="€">Euros (€)</option>
+            <option value="$" selected>Dólares ($)</option>
         </select>
     </div>
 </template>
